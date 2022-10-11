@@ -6,7 +6,7 @@ int contador;
 void holaMundo(int signalNumber){
     if (signalNumber = 10){
         printf("Es la senal 10\n");
-        contador == 2;
+        contador = 2;
     } else {
         printf("Es otra senal\n");
     }
@@ -20,7 +20,7 @@ void nomeMatas(int sig){
 int main(){
     signal(12, holaMundo);
     signal(2, nomeMatas);
-    signal(10, nomeMatas);
+    signal(10, holaMundo);
     contador = 1;
     while(contador == 1){
         printf("Estoy trabajando\n");
